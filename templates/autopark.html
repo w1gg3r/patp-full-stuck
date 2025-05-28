@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автопарк</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="container">
+                <div class="nav">
+                    <ul class="logo">
+                        <a href="/">
+                            <img src="/static/images/logo.png" alt="logo">
+                        </a>
+                    </ul>
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <a href="/schedule">Расписание</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://citybus35.ru">Умный транспорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="/payment">Оплата проезда</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/price">Стоимость проезда</a></li>
+                                <li><a href="https://bilet.nspk.ru">Оплата банковской картой</a></li>
+                                <li><a href="https://e-vologda.com">Электронная Вологда</a></li>
+                                <li><a href="https://t-karta.ru">История поездок (кабинет)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="/service">Услуги</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/charter">Заказные перевозки</a></li>
+                                <li><a href="/passenger">Пассажирские перевозки</a></li>
+                                <li><a href="/children">Перевозка детей</a></li>
+                            </ul>
+                        </li>
+                        <a href="/work" class="nav-item">Работа у нас</a>
+                        <a href="https://yc.mupatp1.ru" class="nav-item">Учебный центр</a>
+                        <li class="nav-item dropdown">
+                            <a href="/about-us">О компании</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/news">Новости</a></li>
+                                <li><a href="/documents">Документы</a></li>
+                                <li><a href="/anti-corruption">Противодействие коррупции</a></li>
+                                <li><a href="/contact">Контакты</a></li>
+                                <li><a href="https://вашбилет.рф">Ваш билет</a></li>
+                                <li><a href="/autopark">Автопарк</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="/official-information">Официальная информация</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/info-for-police-vologda">Информация от <br> прокуратуры г.
+                                        Вологды</a></li>
+                            </ul>
+                        </li>
+                        <a href="/your-ticket" class="nav-item">Ваш билет</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page-content">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/about-us">О компании</a></li>
+                    <li><span>Автопарк</span></li>
+                </ul>
+            </nav>
+    
+            <div class="content-inner">
+                <h1>Автопарк</h1>
+    
+                <div class="autopark-content">
+                    <p>Парк АО "ПАТП № 1" насчитывает порядка 150 машин как отечественного, так и зарубежного производства. Они подходят для самых разных транспортных задач. Все автобусы предприятия оборудованы кондиционерами, ремнями безопасности, тахографами и  навигационной системой ГЛОНАСС, которая позволяет четко отслеживать маршрут движения автобусов и контролировать регулярность движения.</p>
+    
+                    <p>Для улучшения качества обслуживания и обеспечения транспортной доступности маломобильных граждан, предприятие приобрело ряд низкопольных автобусов, не уступающих европейским аналогам. Они оборудованы системой книлинга (наклона пола при остановке в сторону дверей), пандусами и специально отведенными местами для инвалидных колясок.</p>
+    
+                    <p>Для обеспечения высокого уровня технической готовности парка автобусов на ПАТП оборудованы участки по техническому обслуживанию и ремонту, благодаря чему значительно сокращается время простоя автобуса на ремонте.</p>
+    
+                    <p>Паспорта доступности транспортных средств для пассажиров из числа инвалидов:</p>
+    
+                     <ul class="passports-list">
+                        <li><a href="/uploads/Паспорт-1.pdf">Паспорт 1</a></li>
+                        <li><a href="/uploads/Паспорт-2.pdf">Паспорт 2</a></li>
+                        <li><a href="/uploads/Паспорт-3.pdf">Паспорт 3</a></li>
+                        <li><a href="/uploads/Паспорт-4.pdf">Паспорт 4</a></li>
+                        <li><a href="/uploads/Паспорт-5.pdf">Паспорт 5</a></li>
+                        <li><a href="/uploads/Паспорт-6.pdf">Паспорт 6</a></li>
+                        <li><a href="/uploads/Паспорт-7.pdf">Паспорт 7</a></li>
+                    </ul>
+
+                    <div class="bus-selection">
+                        <label for="bus-model">Выберите модель автобуса:</label>
+                        <select id="bus-model" name="bus-model">
+                            <option value="">-- Выберите модель --</option>
+                            <option value="liaz-5256">ЛиАЗ-5256</option>
+                            <option value="olimp-4252">Олимп-4252</option>
+                            <option value="olimp-4252.1">Олимп-4252.1</option>
+                            <option value="maz-206067">МАЗ-206067</option>
+                            <option value="liaz-529257">ЛиАЗ-529257</option>
+                            <option value="maz-103465">МАЗ 103465</option>
+                            <option value="maz-103565">МАЗ 103565</option>
+                            <option value="nefaz-5299-30-31">НЕФАЗ – 5299-0000030-31</option>
+                        </select>
+                    </div>
+    
+                    <div class="bus-info" style="display: none;"> <!-- style="display: none;" скрывает блок по умолчанию -->
+                        <div class="bus-image">
+                            <img src="" alt="" id="bus-image">
+                        </div>
+                        <div class="bus-details">
+                            <h2><span id="bus-name"></span></h2>
+                            <p><strong>Описание:</strong> <span id="bus-description"></span></p>
+                            <p><strong>Габаритные размеры:</strong> <span id="bus-dimensions"></span></p>
+                            <p><strong>Пассажировместимость:</strong> <span id="bus-capacity"></span></p>
+                            <p><strong>Максимальная скорость:</strong> <span id="bus-max-speed"></span></p>
+                            <p><strong>Назначение:</strong> <span id="bus-purpose"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-up">
+                <div class="container ds-flx">
+                    <div class="footer-block">
+                        <div class="title-footer">О нас</div>
+                        <div class="about-footer">
+                            <div class="footer-list">
+                                <div class="contact-item">
+                                    <img src="/static/images/phone-fff.svg" alt="">
+                                    <div><a href="tel:+78172556670">+7 (8172) 55-66-70</a></div>
+                                </div>
+                                <div class="contact-item">
+                                    <img src="/static/images/time-fff.svg" alt="">
+                                    <div>ПН-ПТ 08:00-17:00</div>
+                                </div>
+                                <div class="contact-item">
+                                    <img src="/static/images/email-fff.svg" alt="">
+                                    <div><a href="https://e.mail.ru/compose?To=mail@mupatp1.ru">mail@mupatp1.ru</a></div>
+                                </div>
+                                <div class="contact-item">
+                                    <img src="/static/images/geo-fff.svg" alt="">
+                                    <div><a href="#contact">ул. Мудрова, 31, Вологда</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-block">
+                        <div class="title-footer">Последние публикации</div>
+                        <div class="footer-list">
+                            <a href="/news">
+                                <div class="last-news">
+                                    <img src="/static/images/news-item-1.png" alt="">
+                                    <div class="last-news-item">
+                                        <div class="last-news-title">В учебном классе ПАТП-1 в Вологде прошла встреча
+                                            специалистов центра занятости с представителями компании.</div>
+                                        <div class="last-news-date">17/01/2025</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/news">
+                                <div class="last-news">
+                                    <img src="/static/images/news-item-3.png" alt="">
+                                    <div class="last-news-item">
+                                        <div class="last-news-title">ПАТП №1 ждёт женщин-водителей на работу! И если кто
+                                            скажет, что водитель — это не женская работа, то это вовсе не так.</div>
+                                        <div class="last-news-date">22/01/2025</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/news">
+                                <div class="last-news">
+                                    <img src="/static/images/news-item-2.jpeg" alt="">
+                                    <div class="last-news-item">
+                                        <div class="last-news-title">Для более комфортной и быстрой оплаты во всех
+                                            трёхдверных автобусах ПАТП № 1 будут работать четыре терминала.</div>
+                                        <div class="last-news-date">07/02/2025</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item">
+                        <a href="https://vk.com/patp1vologda" class="vk-icon">
+                            <img src="/static/images/vk.svg" alt="VK" class="vk-default">
+                            <img src="/static/images/vk-fff.svg" alt="VK White" class="vk-hover">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-low">
+                <div class="container">
+                    <div class="nav">
+                        <ul class="nav-list">
+                            <a href="/schedule" class="nav-item">Расписание</a>
+                            <a href="/price" class="nav-item">Оплата проезда</a>
+                            <a href="/service" class="nav-item">Услуги</a>
+                            <a href="/work" class="nav-item">Работа у нас</a>
+                            <a href="https://yc.mupatp1.ru" class="nav-item">Учебный центр</a>
+                            <a href="/about-us" class="nav-item">О компании</a>
+                            <a href="official-information" class="nav-item">Офицальная информация</a>
+                            <a href="/your-ticket" class="nav-item">Ваш билет</a>
+                        </ul>
+                        <ul class="copyright">
+                            ©2025 Rogalev
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="/static/js/bus-selector.js"></script>
+</body>
+
+</html>

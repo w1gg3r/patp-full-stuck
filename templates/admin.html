@@ -1,0 +1,55 @@
+<!-- templates/admin.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Админ-панель</title>
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Общие стили сайта -->
+    <link rel="stylesheet" href="/static/css/admin.css"> <!-- Стили админки -->
+</head>
+<body class="admin-page">
+
+<!-- === Шапка как на основном сайте === -->
+<header class="header">
+    <div class="header-inner">
+        <div class="container">
+            <div class="nav">
+                <ul class="logo">
+                    <a href="/">
+                        <img src="/static/images/logo.png" alt="Логотип">
+                    </a>
+                </ul>
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/admin">Главная</a></li>
+                    <li class="nav-item"><a href="/admin/news">Новости</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- === Основной контент === -->
+<main class="page-content">
+    <div class="container">
+        {% block content %}
+        <h1>Админ-панель</h1>
+        <p>Добро пожаловать в панель управления сайтом.</p>
+        <a href="/" class="exit-btn">← Выход на главную</a>
+        {% endblock %}
+    </div>
+</main>
+
+<!-- === Футер на всю ширину экрана === -->
+<footer class="footer-low">
+    <div class="container">
+        <div class="nav">
+            <ul class="copyright">
+                &copy; Rogalev — Админ-панель
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<h1>Управление новостями</h1>
+
+<!-- Кнопка добавления -->
+<a href="#" id="add-news-btn" class="service-btn">Добавить новость</a>
+
+<!-- Таблица новостей -->
+<div class="news-grid">
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Заголовок</th>
+                <th>Дата</th>
+                <th>Изображение</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody id="news-table-body">
+            <!-- Сюда будут подгружаться новости через JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Модальное окно -->
+<div id="news-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+            <h2 id="modal-title">Добавить новость</h2>
+        </div>
+        <div class="modal-body">
+            <form id="news-form">
+                <input type="hidden" id="news-id">
+
+                <label for="news-title">Заголовок:</label>
+                <input type="text" id="news-title" required>
+
+                <label for="news-description">Описание:</label>
+                <textarea id="news-description" rows="6" required></textarea>
+
+                <label for="news-date">Дата (дд/мм/гггг):</label>
+                <input type="text" id="news-date" placeholder="например: 07/02/2025" required>
+
+                <label for="news-image-upload">Выберите изображение:</label>
+                <input type="file" id="news-image-upload" accept="image/*" required>
+                <div id="preview-container" style="margin-top: 10px;"></div>
+
+                <button type="submit" class="service-btn">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/admin.js"></script>
+{% endblock %}

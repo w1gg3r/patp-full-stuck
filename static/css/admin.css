@@ -1,0 +1,328 @@
+/* admin.css */
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-content {
+    flex-grow: 1;
+    padding-top: 40px;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* === Шапка === */
+.header {
+    margin: 32px 0;
+    position: relative;
+}
+.header-inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+}
+.logo img {
+    height: 60px;
+}
+.nav-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.nav-list a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0E75AD;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.nav-list a:hover {
+    color: #AE312E;
+    transform: scale(1.05);
+}
+
+/* === Контент === */
+main.page-content h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 36px;
+    color: #0E75AD;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.exit-btn {
+    display: inline-block;
+    background-color: #AE312E;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+.exit-btn:hover {
+    background-color: #9b2a27;
+}
+
+/* === Таблица новостей === */
+.news-grid table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.news-grid th,
+.news-grid td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+.news-grid th {
+    background-color: #f5f5f5;
+    color: #0E75AD;
+    font-weight: bold;
+}
+.news-grid img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+.news-grid td button {
+    margin-right: 10px;
+}
+.news-grid td button:first-child {
+    background-color: #0E75AD;
+    color: white;
+}
+.news-grid td button:last-child {
+    background-color: #AE312E;
+    color: white;
+}
+
+/* === Кнопки редактирования и удаления === */
+.service-btn {
+    display: inline-block;
+    background-color: #0E75AD;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.service-btn:hover {
+    background-color: #085d8c;
+    transform: scale(1.02);
+}
+.service-btn:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* === Модальное окно === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 50px;
+}
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.modal-header h2 {
+    color: #0E75AD;
+    font-size: 24px;
+    margin: 0;
+}
+.modal-body label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+.modal-body input[type="text"],
+.modal-body textarea,
+.modal-body select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+    margin-top: 5px;
+}
+.modal-body input[type="text"]:focus,
+.modal-body textarea:focus,
+.modal-body select:focus {
+    border-color: #0E75AD;
+    box-shadow: 0 0 0 2px rgba(14, 117, 173, 0.2);
+    outline: none;
+}
+.modal-body textarea {
+    min-height: 120px;
+}
+.modal-body button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Превью изображения */
+#preview-container {
+    margin-top: 10px;
+}
+#preview-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.preview-wrapper {
+    position: relative;
+}
+.preview-wrapper button {
+    margin-top: 10px;
+    background-color: #AE312E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+}
+.preview-wrapper button:hover {
+    background-color: #9b2a27;
+}
+
+/* === Футер на всю ширину === */
+.footer-low {
+    margin-top: auto;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #003c83;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.footer-low .container {
+    max-width: none;
+}
+.footer-low .copyright {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* === Форма добавления === */
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-body label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+.modal-body input[type="text"],
+.modal-body textarea,
+.modal-body input[type="date"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    resize: vertical;
+}
+.modal-body input[type="text"]:focus,
+.modal-body textarea:focus,
+.modal-body input[type="date"]:focus {
+    outline: none;
+    border-color: #0E75AD;
+    box-shadow: 0 0 0 2px rgba(14, 117, 173, 0.2);
+}
+.modal-body textarea {
+    min-height: 120px;
+}
+
+/* Превью изображения */
+#preview-container {
+    margin-top: 10px;
+}
+#preview-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+#preview-container button.remove-preview {
+    background-color: #AE312E;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#preview-container button.remove-preview:hover {
+    background-color: #9b2a27;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 50px;
+}
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(14, 117, 173, 0.2);
+    position: relative;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.close:hover {
+    color: #333;
+}
